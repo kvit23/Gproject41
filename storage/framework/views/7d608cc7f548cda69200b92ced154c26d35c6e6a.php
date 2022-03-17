@@ -1,0 +1,11 @@
+<?php $__env->startSection('page-title',__('site.my-orders')); ?>
+<?php $__env->startSection('content'); ?>
+
+
+       <?php echo $__env->make('employer.order.order-list',['orders'=>$orders], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+
+    <div class="pagination-wrapper"> <?php echo clean( $orders->appends(request()->input())->render() ); ?> </div>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make($userLayout, \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /home/re3aytk/public_html/dev/resources/views/employer/order/orders.blade.php ENDPATH**/ ?>

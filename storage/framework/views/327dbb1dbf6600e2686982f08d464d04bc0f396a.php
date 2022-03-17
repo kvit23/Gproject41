@@ -1,0 +1,3 @@
+<?php $__currentLoopData = $crumbs; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $crumb): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+    <li class="breadcrumb-item  <?php if($loop->last): ?>active <?php endif; ?> "  <?php if($loop->last): ?>aria-current="page" <?php endif; ?> ><a href="<?php echo e($crumb['link']); ?>"><?php echo e($crumb['page']); ?></a></li>
+<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?><?php /**PATH /home/re3aytk/public_html/dev/resources/views/partials/breadcrumb.blade.php ENDPATH**/ ?>
